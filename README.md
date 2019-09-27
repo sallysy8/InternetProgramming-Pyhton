@@ -1,6 +1,6 @@
 # InternetProgramming-Pyhton
 ## Navigate the basics of the python development environment, including:
-### Locate help both online and within the python interpreter
+1. Locate help both online and within the python interpreter
 ### Setup a virtual environment for new projects
 ## Work collaboratively on code creation, including:
 ### Synchronize the creation of code by performing the practice of pair programming
