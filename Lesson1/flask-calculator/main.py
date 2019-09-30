@@ -5,7 +5,8 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from model import SavedTotal
 
 app = Flask(__name__)
-app.secret_key = b'\xaf\x0b!m\x18\xc3f\xd39\xf7\x0e3\xe8\xc2\xe4\xb7\x13\xb4w\xb8\x86;\xe4\xc2'
+# app.secret_key = b'\xaf\x0b!m\x18\xc3f\xd39\xf7\x0e3\xe8\xc2\xe4\xb7\x13\xb4w\xb8\x86;\xe4\xc2'
+app.secret_key = os.environ.get('SECRET_KEY').encode()
 
 
 @app.route('/add', methods=['GET', 'POST'])
@@ -47,3 +48,4 @@ def retrieve():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
+
