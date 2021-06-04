@@ -21,7 +21,7 @@ cryptography==2.6.1
 cssselect==1.0.3
 Cython==0.29.13
 decorator==4.4.0
-Django==2.2.4
+Django==2.2.21
 docutils==0.14
 et-xmlfile==1.0.1
 Flask==1.1.1
